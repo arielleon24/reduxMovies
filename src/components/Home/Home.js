@@ -17,7 +17,7 @@ const Home = () => {
       .catch((err) => {
         console.log(err)
       })
-      console.log("Response from API", response)
+      console.log("Response from API", response.data.search)
       dispatch(addMovies(response.data))
     }
 

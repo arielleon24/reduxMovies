@@ -6,11 +6,11 @@ import { getAllMovies } from '../../features/movies/movieSlice';
 const MovieListing = () => {
   const movies = useSelector(getAllMovies);
   let renderMovies = "";
-  
-  renderMovies = movies.response === "True" ? (
-    movies.search.map((movie, index) => {
-      <MovieCard key={index} data={movie}/>;
-    })
+
+  renderMovies = movies.Response === "True" ? (
+    movies.Search.map((movie, index) => (
+      <MovieCard key={index} data={movie}/>
+  ))
   ): (
       <div className="movies-error">
         <h3>{movies.Error}</h3>
