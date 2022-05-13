@@ -1,4 +1,5 @@
 import React from 'react';
+import "./MovieCard.scss"
 
 const MovieCard = (props) => {
   const {data} = props
@@ -15,7 +16,6 @@ const MovieCard = (props) => {
           </div>
         </div>
       </div>
-      MovieCard
     </div>
   );
 };
