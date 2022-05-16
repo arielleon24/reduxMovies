@@ -4,8 +4,8 @@ import "./Footer.scss"
 const footer = () => {
   return (
     <div className='footer'>
-      <div>Movie app</div>
-      <div>Movie inc and affiliates</div>
+      <div>Ariel's Movie app</div>
+      <div>Simple app to practice Redux</div>
     </div>
   );
 };
