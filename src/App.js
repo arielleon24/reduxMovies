@@ -6,10 +6,15 @@ import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import MovieDetail from './components/MovieDetail/MovieDetail';
 import PageNotFound from './components/PageNotFound/PageNotFound';
+import "./images/background-video.mov";
+
 
 function App() {
   return (
     <div className="app">
+      {/* <video playsInline autoPlay muted loop poster='./images/background-video.mov'>
+        <source src='./images/background-video.mov'/>
+      </video> */}
      <Router>
        <Header></Header>
        <div className='container'>

@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div className='header'>
       <Link to="/">
-      <div className='logo'>Dem Stars & dem Wars</div>
+      <div className='logo'>All Stars & All Wars</div>
       </Link>
       <div className='user-image'>
         <img src={user} alt="user" />
