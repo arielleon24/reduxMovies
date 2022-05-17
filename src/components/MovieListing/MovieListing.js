@@ -1,7 +1,9 @@
 import React from 'react';
 import MovieCard from "../MovieCard/MovieCard"
 import "./MovieListing.scss"
+import { Settings } from "../../common/settings.js";
 import { useSelector } from 'react-redux';
+import Slider from "react-slick"
 import videobck from "../../images/background-video.mov"
 import { getAllMovies, getAllShows } from '../../features/movies/movieSlice';
 
@@ -35,12 +37,16 @@ const MovieListing = () => {
         <video src={videobck} autoPlay loop muted></video>
       </div>
       <div className='movie-list'>
-        <h2>Movies</h2>
-        <div className='movie-container'>{renderMovies}</div>
+        <h2>Movies:</h2>
+        <div className='movie-container'>
+          <Slider {...Settings}>{renderMovies}</Slider>
+        </div>
       </div>
       <div className='show-list'>
-        <h2>Shows</h2>
-        <div className='movie-container'>{renderShows}</div>
+        <h2>Shows:</h2>
+        <div className='movie-container'>
+          <Slider {...Settings}>{renderShows}</Slider>
+        </div>
       </div>
     </div>
   )
