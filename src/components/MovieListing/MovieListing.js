@@ -2,6 +2,7 @@ import React from 'react';
 import MovieCard from "../MovieCard/MovieCard"
 import "./MovieListing.scss"
 import { useSelector } from 'react-redux';
+import videobck from "../../images/background-video.mov"
 import { getAllMovies, getAllShows } from '../../features/movies/movieSlice';
 
 const MovieListing = () => {
@@ -30,6 +31,9 @@ const MovieListing = () => {
     );
   return (
     <div className='movie-wrapper'>
+      <div className='video-wrapper'>
+        <video src={videobck} autoPlay loop muted></video>
+      </div>
       <div className='movie-list'>
         <h2>Movies</h2>
         <div className='movie-container'>{renderMovies}</div>

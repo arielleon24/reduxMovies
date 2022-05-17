@@ -12,9 +12,6 @@ import "./images/background-video.mov";
 function App() {
   return (
     <div className="app">
-      {/* <video playsInline autoPlay muted loop poster='./images/background-video.mov'>
-        <source src='./images/background-video.mov'/>
-      </video> */}
      <Router>
        <Header></Header>
        <div className='container'>
